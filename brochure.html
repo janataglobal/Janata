@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Brochure | Janata Global Export</title>
+    <meta name="description" content="Janata Global Export product brochure — GI Wire, Wired Nails, Aluminium Sections, Steel Products. Licensed Indian exporter. IEC: GUUPS7171E." />
+    <link rel="icon" href="assets/logo.jpeg" type="image/jpeg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .brochure-page { max-width: 960px; margin: 0 auto; }
+      .brochure-header {
+        background: linear-gradient(135deg, var(--navy), var(--charcoal));
+        padding: 3rem 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+        flex-wrap: wrap;
+        border-bottom: 4px solid var(--gold);
+      }
+      .brochure-header-left h1 {
+        font-family: 'Montserrat', sans-serif;
+        color: var(--white);
+        font-size: 1.8rem;
+        font-weight: 900;
+        margin-bottom: 0.25rem;
+      }
+      .brochure-header-left p { color: var(--gold-light); font-size: 0.9rem; font-weight: 600; letter-spacing: 0.06em; }
+      .brochure-section { padding: 2rem; border-bottom: 1px solid var(--border); }
+      .brochure-section h2 {
+        font-family: 'Montserrat', sans-serif;
+        color: var(--navy);
+        font-size: 1.1rem;
+        font-weight: 800;
+        border-left: 4px solid var(--gold);
+        padding-left: 0.75rem;
+        margin-bottom: 1.25rem;
+        letter-spacing: 0.04em;
+      }
+      .brochure-product-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.25rem;
+      }
+      .brochure-product {
+        background: var(--slate-50);
+        border: 1px solid var(--border);
+        border-radius: var(--r-md);
+        padding: 1.25rem;
+      }
+      .brochure-product h3 {
+        color: var(--navy);
+        font-weight: 700;
+        font-size: 0.92rem;
+        margin-bottom: 0.75rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+      .brochure-product table { width: 100%; font-size: 0.82rem; }
+      .brochure-product td { padding: 0.3rem 0.5rem; border-bottom: 1px solid var(--border); }
+      .brochure-product td:first-child { color: var(--muted); font-weight: 600; width: 45%; }
+      .brochure-product td:last-child { color: var(--navy); }
+      .brochure-footer {
+        background: var(--navy);
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+      }
+      .brochure-footer h4 { color: var(--gold-light); font-size: 0.82rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 0.5rem; }
+      .brochure-footer p, .brochure-footer a { color: rgba(255,255,255,0.8); font-size: 0.82rem; line-height: 1.7; display: block; }
+      .print-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: var(--gold);
+        color: var(--navy);
+        font-weight: 800;
+        font-size: 0.85rem;
+        padding: 0.7rem 1.4rem;
+        border-radius: var(--r-pill);
+        cursor: pointer;
+        border: none;
+        transition: transform var(--t-fast);
+      }
+      .print-btn:hover { transform: translateY(-2px); }
+      @media print {
+        .no-print { display: none !important; }
+        .brochure-header { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+        .brochure-footer { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      }
+      @media (max-width: 640px) {
+        .brochure-product-grid { grid-template-columns: 1fr; }
+        .brochure-footer { grid-template-columns: 1fr; }
+      }
+    </style>
+  </head>
+  <body style="background:var(--slate-50);">
+
+    <!-- Nav bar (no-print) -->
+    <div class="no-print announcement-bar" style="position:sticky;top:0;z-index:100;">
+      <div class="container announcement-inner" style="justify-content:space-between;">
+        <a href="index.html" style="color:var(--gold-light);font-weight:600;font-size:0.82rem;">← Back to Website</a>
+        <div style="display:flex;gap:1rem;align-items:center;">
+          <button onclick="window.print()" class="print-btn">🖨️ Print / Save as PDF</button>
+          <a href="https://wa.me/919550506546" target="_blank" rel="noreferrer" class="btn btn-wa" style="font-size:0.82rem;padding:0.6rem 1rem;">💬 WhatsApp</a>
+        </div>
+      </div>
+    </div>
+
+    <div style="padding:2rem 1rem;">
+      <div class="brochure-page" style="background:var(--white);border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow-lg);">
+
+        <!-- Brochure Header -->
+        <div class="brochure-header">
+          <div class="brochure-header-left">
+            <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:1rem;">
+              <img src="assets/logo.jpeg" alt="Janata Global Export" style="width:50px;height:50px;border-radius:8px;background:white;padding:3px;" />
+              <div>
+                <div style="color:var(--white);font-family:'Montserrat',sans-serif;font-weight:900;font-size:1rem;letter-spacing:0.04em;">JANATA GLOBAL EXPORT</div>
+                <div style="color:var(--gold-light);font-size:0.72rem;letter-spacing:0.08em;">CONNECTING INDIAN QUALITY WITH GLOBAL MARKETS</div>
+              </div>
+            </div>
+            <h1>Product &amp; Export Capability Brochure</h1>
+            <p>B2B Metal &amp; Wire Export | Hyderabad, India | Gulf &amp; Worldwide</p>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:0.5rem;text-align:right;">
+            <span class="credential-badge">🛡️ IEC: GUUPS7171E</span>
+            <span class="credential-badge">🛡️ GSTIN: 36GUUPS7171E1ZT</span>
+            <span style="color:rgba(255,255,255,0.6);font-size:0.78rem;">www.janataglobal.com</span>
+          </div>
+        </div>
+
+        <!-- Company Overview -->
+        <div class="brochure-section">
+          <h2>Company Overview</h2>
+          <p style="color:var(--muted);font-size:0.9rem;line-height:1.8;max-width:700px;">Janata Global Export is an IEC-licensed, GST-registered B2B export company headquartered in Hyderabad, Telangana, India. We specialize in the export of high-grade GI Wire, Wired Nails, Aluminium Sections, Steel Coils, Rebar and related metal products to international buyers across the Gulf, GCC, Middle East, Africa and worldwide markets. All products are supplied to ASTM, BS and IS standards with complete documentation.</p>
+        </div>
+
+        <!-- Products -->
+        <div class="brochure-section">
+          <h2>Core Product Lines</h2>
+          <div class="brochure-product-grid">
+
+            <div class="brochure-product">
+              <h3>🔩 GI Binding Wire &amp; GI Wire</h3>
+              <table>
+                <tr><td>Gauge Range</td><td>16G – 22G</td></tr>
+                <tr><td>Diameter</td><td>0.70 – 1.60 mm</td></tr>
+                <tr><td>Zinc Coating</td><td>Min. 156 g/m²</td></tr>
+                <tr><td>Standard</td><td>IS 6745 / ASTM A641</td></tr>
+                <tr><td>Packaging</td><td>1–25 kg coil</td></tr>
+                <tr><td>MOQ</td><td>5 MT</td></tr>
+              </table>
+            </div>
+
+            <div class="brochure-product">
+              <h3>📌 Wired Nails (Common &amp; Clout)</h3>
+              <table>
+                <tr><td>Size Range</td><td>1" – 6" lengths</td></tr>
+                <tr><td>Finish</td><td>Bright / Galvanized</td></tr>
+                <tr><td>Head Type</td><td>Flat / Round / Large</td></tr>
+                <tr><td>Standard</td><td>IS 723 / BS 1202</td></tr>
+                <tr><td>Packaging</td><td>25 / 50 kg bags</td></tr>
+                <tr><td>MOQ</td><td>5 MT</td></tr>
+              </table>
+            </div>
+
+            <div class="brochure-product">
+              <h3>🏗️ Aluminium Extrusions &amp; Profiles</h3>
+              <table>
+                <tr><td>Alloy Grade</td><td>6061 / 6063 / 6082</td></tr>
+                <tr><td>Temper</td><td>T5 / T6</td></tr>
+                <tr><td>Shapes</td><td>Angles, Channels, Bars</td></tr>
+                <tr><td>Standard</td><td>ASTM B221 / EN 573</td></tr>
+                <tr><td>Finish</td><td>Mill / Anodized</td></tr>
+                <tr><td>MOQ</td><td>3 MT</td></tr>
+              </table>
+            </div>
+
+            <div class="brochure-product">
+              <h3>⚙️ Steel Coils &amp; TMT Rebar</h3>
+              <table>
+                <tr><td>Type</td><td>HR/CR Coils, TMT Bar</td></tr>
+                <tr><td>Rebar Grade</td><td>Fe 415 / Fe 500</td></tr>
+                <tr><td>Standard</td><td>IS 1786 / ASTM A615</td></tr>
+                <tr><td>Dia (Rebar)</td><td>8 mm – 32 mm</td></tr>
+                <tr><td>Packaging</td><td>Coil / Bundle</td></tr>
+                <tr><td>MOQ</td><td>20 MT</td></tr>
+              </table>
+            </div>
+
+            <div class="brochure-product">
+              <h3>🔲 Wire Mesh &amp; Steel Pipes</h3>
+              <table>
+                <tr><td>Mesh Type</td><td>Welded / Hexagonal</td></tr>
+                <tr><td>Pipe Type</td><td>ERW / Seamless</td></tr>
+                <tr><td>Pipe OD</td><td>15 mm – 508 mm</td></tr>
+                <tr><td>Standard</td><td>IS 1239 / API 5L</td></tr>
+                <tr><td>Finish</td><td>Black / Galvanized</td></tr>
+                <tr><td>MOQ</td><td>5–10 MT</td></tr>
+              </table>
+            </div>
+
+            <div class="brochure-product" style="background:linear-gradient(135deg,var(--navy),var(--charcoal));border-color:rgba(212,175,55,0.3);">
+              <h3 style="color:var(--gold-light);">🌐 Custom Metal Export</h3>
+              <table>
+                <tr><td style="color:rgba(255,255,255,0.6);">Service</td><td style="color:var(--white);">Custom Sourcing</td></tr>
+                <tr><td style="color:rgba(255,255,255,0.6);">Packaging</td><td style="color:var(--white);">Buyer-Specified</td></tr>
+                <tr><td style="color:rgba(255,255,255,0.6);">Inspection</td><td style="color:var(--white);">3rd Party OK</td></tr>
+                <tr><td style="color:rgba(255,255,255,0.6);">Incoterms</td><td style="color:var(--white);">FOB/CIF/CFR/EXW</td></tr>
+                <tr><td style="color:rgba(255,255,255,0.6);">Documents</td><td style="color:var(--white);">Full Export Set</td></tr>
+                <tr><td style="color:rgba(255,255,255,0.6);">MOQ</td><td style="color:var(--white);">Negotiable</td></tr>
+              </table>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Standards -->
+        <div class="brochure-section">
+          <h2>Quality Standards &amp; Compliance</h2>
+          <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;">
+            <div>
+              <strong style="color:var(--navy);display:block;margin-bottom:0.5rem;font-size:0.88rem;">ASTM Standards</strong>
+              <p style="color:var(--muted);font-size:0.82rem;line-height:1.8;">A641 · A764 · B221 · B209 · A653 · A53 · A615</p>
+            </div>
+            <div>
+              <strong style="color:var(--navy);display:block;margin-bottom:0.5rem;font-size:0.88rem;">British Standards (BS)</strong>
+              <p style="color:var(--muted);font-size:0.82rem;line-height:1.8;">EN 10244 · EN 10264 · BS 1202 · EN 573 · EN 485</p>
+            </div>
+            <div>
+              <strong style="color:var(--navy);display:block;margin-bottom:0.5rem;font-size:0.88rem;">Indian Standards (IS/BIS)</strong>
+              <p style="color:var(--muted);font-size:0.82rem;line-height:1.8;">IS 6745 · IS 280 · IS 723 · IS 513 · IS 1786 · IS 1239</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Export Logistics -->
+        <div class="brochure-section">
+          <h2>Export Logistics</h2>
+          <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;">
+            <div style="text-align:center;padding:1rem;background:var(--slate-50);border-radius:var(--r-md);">
+              <div style="font-size:1.8rem;margin-bottom:0.4rem;">⚓</div>
+              <strong style="color:var(--navy);display:block;font-size:0.9rem;">Mundra Port</strong>
+              <span style="color:var(--muted);font-size:0.78rem;">Primary Gulf Gateway</span>
+            </div>
+            <div style="text-align:center;padding:1rem;background:var(--slate-50);border-radius:var(--r-md);">
+              <div style="font-size:1.8rem;margin-bottom:0.4rem;">🚢</div>
+              <strong style="color:var(--navy);display:block;font-size:0.9rem;">JNPT / Nhava Sheva</strong>
+              <span style="color:var(--muted);font-size:0.78rem;">Global Connectivity</span>
+            </div>
+            <div style="text-align:center;padding:1rem;background:var(--slate-50);border-radius:var(--r-md);">
+              <div style="font-size:1.8rem;margin-bottom:0.4rem;">🏗️</div>
+              <strong style="color:var(--navy);display:block;font-size:0.9rem;">Vizag Port</strong>
+              <span style="color:var(--muted);font-size:0.78rem;">Bulk Steel Cargo</span>
+            </div>
+          </div>
+          <p style="color:var(--muted);font-size:0.82rem;margin-top:1rem;">Available Incoterms: FOB · CIF · CFR · EXW · DAP | FCL &amp; LCL options | 3rd party inspection supported</p>
+        </div>
+
+        <!-- Brochure Footer -->
+        <div class="brochure-footer">
+          <div>
+            <h4>Contact</h4>
+            <p>Mohammad Afrozuddin<br />Director – Overseas Sales</p>
+            <p>📞 +91 9550506546</p>
+            <p>✉️ sales@janataglobal.com</p>
+            <p>💬 wa.me/919550506546</p>
+          </div>
+          <div>
+            <h4>Office Address</h4>
+            <p>H.No. 11-6-528, K.H Market<br />Nampally, Hyderabad – 500001<br />Telangana, India</p>
+            <p style="margin-top:0.5rem;">🌐 www.janataglobal.com</p>
+          </div>
+          <div>
+            <h4>Credentials</h4>
+            <p>IEC: GUUPS7171E</p>
+            <p>GSTIN: 36GUUPS7171E1ZT</p>
+            <p style="margin-top:0.5rem;color:rgba(255,255,255,0.5);font-size:0.75rem;">© 2026 Janata Global Export<br />All rights reserved.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

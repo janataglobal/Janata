@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="Janata Global Exports logo">
+  <rect width="256" height="256" rx="40" fill="#0B1F3A"/>
+  <path d="M64 90h128v32H64z" fill="#C59B3F"/>
+  <path d="M78 144h92l-18 48H96z" fill="#E8CF86"/>
+  <path d="M92 78l80 100" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round"/>
+  <path d="M158 78l-44 62" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round"/>
+</svg>
